@@ -2,6 +2,7 @@
   name , basic pay, ba ,hra ,pf*/
   
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 
