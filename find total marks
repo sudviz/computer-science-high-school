@@ -38,3 +38,39 @@ int main()
 	
 	
 }
+
+//b
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+struct details{
+	string name;
+	int rno,mark[6];
+}
+int main()
+{
+	int total=0;
+	
+	details *p;
+	p = new details;
+	
+	
+	
+	cout << "\n"<< "enter name of student : ";cin >> p -> name;
+	cout << "\n"<< "enter register number : ";cin >> p ->rno;
+	cout << "\n"<< "enter marks : ";
+	for(int i=0; i<=6; i++)
+	{
+		cin >> p->mark[i];
+		total=total+ p->mark[i];
+	}
+	cout << "\n"<<"student : ";
+	cout << "\n"<< p->rno;
+	cout << "\n"<< p->name;
+	cout << "\n"<< "Total marks = "<< total;
+	
+	
+	
+}
