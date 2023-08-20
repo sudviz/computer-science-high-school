@@ -1,0 +1,26 @@
+//input a string to the character pointer and count the vowels in the string
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char *p;int i=0;
+    p = new char;
+
+    cin >> p;
+    //to find and count vowels
+    while(*p != '\0')
+        {
+            if (*p == 'a'||*p =='e'||*p =='i'||*p =='o'||*p =='u'||*p == 'A'||*p =='E'||*p =='I'||*p =='O'||*p =='U')
+                {
+                    i++;
+                }
+                else {i=i;}
+
+            p++;
+
+        }
+    cout << "The number of vowels in you given phrase is : " << i;
+    return 0;
+}
