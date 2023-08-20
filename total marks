@@ -1,0 +1,40 @@
+/*Using a structure store the details of a student store the details of a student such as 
+  register no  name and the marks obtained in 6 subjects by the students .find out the total
+  total marks 
+  
+  a) using structure variable 
+  b) using structure pointer
+  
+*/
+
+// a) 
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+struct details{
+	string name;
+	int rno,mark[6];
+	
+}s1;
+int main()
+{
+	int total=0;
+	
+	cout << "\n"<< "enter name of student : ";cin >> s1.name;
+	cout << "\n"<< "enter register number : ";cin >> s1.rno;
+	cout << "\n"<< "enter marks : ";
+	for(int i=0; i<=6; i++)
+	{
+		cin >> s1.mark[i];
+		total=total+ s1.mark[i];
+	}
+	cout << "\n"<<"student : ";
+	cout << "\n"<< s1.rno;
+	cout << "\n"<< s1.name;
+	cout << "\n"<< "Total marks = "<< total;
+	
+	
+	
+}
