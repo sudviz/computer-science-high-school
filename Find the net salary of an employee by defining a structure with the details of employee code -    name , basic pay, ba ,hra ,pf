@@ -1,0 +1,32 @@
+/* Find the net salary of an employee by defining a structure with the details of employee code - 
+  name , basic pay, ba ,hra ,pf*/
+  
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+
+
+struct details{
+	string name;
+	int ecode,basicpay,da,hra,pf;
+	
+}e1;
+int main()
+{
+	int total=0;
+	
+	
+	cout << "\n"<< "enter name : ";cin >> e1.name;
+	
+	cout << "\n"<< "enter employe code ,basic pay ,DA,HRA,PF : ";
+	cin >> e1.ecode 
+		>> e1.basicpay 
+		>> e1.da 
+		>> e1.hra 
+		>> e1.pf;
+	
+	cout << "net salary = " <<e1.basicpay+e1.da+e1.hra+e1.pf;
+	
+	
+}
